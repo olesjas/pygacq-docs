@@ -1,0 +1,5 @@
+# Local build output and environment
+docs/_build/
+.venv/
+__pycache__/
+.DS_Store
