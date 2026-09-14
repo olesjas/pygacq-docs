@@ -1,9 +1,9 @@
 # Sphinx configuration for the PyGacq documentation
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-project = "PyGacq"
-author = "PyGacq developers"
-copyright = "2026, PyGacq developers"
+project = "Pygacq"
+author = "Olesja Smirnova"
+copyright = "2026, AURA"
 release = "0.2"
 version = release
 
