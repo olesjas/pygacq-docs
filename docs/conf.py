@@ -1,4 +1,4 @@
-# Sphinx configuration for the PyGacq documentation
+# Sphinx configuration for the Pygacq documentation
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 project = "Pygacq"
@@ -21,12 +21,14 @@ source_suffix = {
 myst_enable_extensions = [
     "colon_fence",
     "deflist",
+    "attrs_inline",       # {w=24px} after an image to set its size
 ]
-# Anchors for headings down to ### so they can be linked to
-myst_heading_anchors = 3
+# Anchors for headings down to #### so they can be linked to
+myst_heading_anchors = 4
 
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+# _drafts holds unfinished pages that are kept in the repository but not built
+exclude_patterns = ["_build", "_drafts", "Thumbs.db", ".DS_Store"]
 
 html_theme = "sphinx_rtd_theme"
-html_title = "PyGacq documentation"
+html_title = "Pygacq documentation"
 html_static_path = []

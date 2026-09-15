@@ -1,12 +1,17 @@
-# PyGacq documentation
+# Pygacq documentation
 
-User documentation for PyGacq, built with [Sphinx](https://www.sphinx-doc.org/)
+User documentation for Pygacq, built with [Sphinx](https://www.sphinx-doc.org/)
 and published on [Read the Docs](https://readthedocs.org/).
 
 Pages live in `docs/` and can be written in Markdown (`.md`, via
 [MyST](https://myst-parser.readthedocs.io/)) or reStructuredText (`.rst`).
 New pages have to be added to a `toctree` (see `docs/index.md` and
-`docs/tutorial/index.md`) to show up in the navigation.
+`docs/tutorial/index.md`) to show up in the navigation. Unfinished pages can be
+kept in `docs/_drafts/`, which is not built.
+
+The toolbar icons in `docs/tutorial/images/icons/` are from
+[Ginga](https://github.com/ejeschke/ginga) (BSD licence), except `ruler.svg`,
+which is from Pygacq.
 
 ## Building locally
 

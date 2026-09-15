@@ -4,3 +4,6 @@ docs/_build/
 __pycache__/
 .DS_Store
 .idea/
+
+# Log files Pygacq writes when run from this folder
+pygacq_*.log

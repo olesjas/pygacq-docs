@@ -1,6 +1,6 @@
-# PyGacq documentation
+# Pygacq documentation
 
-PyGacq is the Gemini acquisition tool: it guides the observer through
+Pygacq is the Gemini acquisition tool: it guides the observer through
 acquiring a target — marking the target and the slit, fiber bundle or
 keyhole, and working out the telescope offsets.
 
