@@ -1,7 +1,8 @@
 # IFU acquisition
 
-:::{note}
-This example is still being written.
-:::
+```{toctree}
+:maxdepth: 1
 
-<!-- TODO: walk through one IFU acquisition, step by step, following the same outline as the imaging draft (docs/_drafts/imaging.md). -->
+ifu-gmos-s
+ifu-gnirs
+```

@@ -305,7 +305,7 @@ Below that:
 - **Start** starts an acquisition (see
   [Starting an acquisition](#starting-an-acquisition)).
 - **Auto Start** starts an acquisition automatically whenever a new acquisition
-  image arrives (not available yet).
+  image arrives (will be available with GPP).
 - **Abort** stops the ongoing acquisition.
 - **Slit**, **Sky** and **MDF**: which slit image, sky image and mask definition
   file to use (see
@@ -328,7 +328,8 @@ There are several ways to start an acquisition:
 : Double-click a FITS file, or select it and click **Start**.
 
 **Auto Start**
-: Pygacq starts an acquisition by itself when a new acquisition image arrives (not available yet).
+: Pygacq starts an acquisition by itself when a new acquisition image arrives
+  (will be available with GPP).
 
 
 #### Select Acquisition Type dialog

@@ -105,6 +105,9 @@ you type an image number or a file name, Pygacq looks in this directory as
 well as in the usual data and MDF directories. The **User Dir** button in
 the **File Browser** tab takes you there.
 
+This directory is only used during the testing period. After that, put such
+files in the Pygacq cache directory instead.
+
 ### Clearing the cache and the database
 
 Pygacq remembers the acquisitions it has already run:
@@ -118,6 +121,10 @@ Pygacq remembers the acquisitions it has already run:
 To run an acquisition as if it had never been run before, with freshly
 processed images and no reused measurements, clear both: choose
 **File → Cleanup → Reset Cache**, then **File → Cleanup → Reset Database**.
+This is meant for testing.
+
+At night, tick **Don't reuse previous measurements** in the acquisition options
+instead, under the three-dots button next to the *Enter image number* box.
 
 ## The main window at a glance
 
@@ -233,7 +240,7 @@ Below that:
 - a text box, *Enter image number*, where you type the image to acquire;
 - **Start** starts an acquisition and **Abort** stops it;
 - **Auto Start** starts an acquisition automatically whenever a new
-  acquisition image arrives (not available yet);
+  acquisition image arrives (will be available with GPP);
 - **Slit**, **Sky** and **MDF** are normally left on **Auto**. Choose **User**
   to pick the image or file yourself.
 

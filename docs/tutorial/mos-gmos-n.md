@@ -1,13 +1,13 @@
 # GMOS-N MOS acquisition (starting with mask out)
 
-This example starts with the mask out of the beam. The observation is GN-2026A-LP-207-55, with the mask `GN2024ALP207-03`.
+This example starts with the mask out of the beam. The observation is GN-2025A-LP-207-35, with the mask `GN2024ALP207-03`.
 It uses three images:
 
 | Image            | What it is      | Mask in beam | P (") | Q (")  |
 |------------------|-----------------|--------------|-------|--------|
-| N20260309S0096   | Field image     | no           | 0.0   | 0.0    |
-| N20260309S0097   | Mask-in image   | yes          | 0.0   | −0.4   |
-| N20260309S0098   | Mask-in image   | yes          | −0.1  | −0.1   |
+| N20250205S0119   | Field image     | no           | 0.0   | 0.0    |
+| N20250205S0120   | Mask-in image   | yes          | −0.3  | −0.3   |
+| N20250205S0121   | Mask-in image   | yes          | −0.5  | 0.0    |
 
 P and Q are the telescope offsets of each image.
 
@@ -28,11 +28,11 @@ number* box, and tick **Manual acquisition type**. It makes the flow match the
 one at night. Skip it when observing.
 :::
 
-Type `N20260309S0096` in the *Enter image number* box and press {kbd}`Enter`.
+Type `N20250205S0119` in the *Enter image number* box and press {kbd}`Enter`.
 
 In the **Select Acquisition Type** dialog, select **MOS**. Pygacq fills in the
 **Mask number** box with the program part from the current observation,
-`GN2026ALP207`. This mask was made in an earlier semester, so change it to
+`GN2025ALP207`. This mask was made in an earlier semester, so change it to
 `GN2024ALP207`, type `3` after the dash, and click **Select**.
 
 :::{figure} images/mos-type-dialog.png
@@ -84,7 +84,7 @@ image of the sequence, with the mask in.
 
 ## 4. Confirm the acquisition boxes
 
-Type `N20260309S0097` in the *Enter image number* box and press {kbd}`Enter`.
+Type `N20250205S0120` in the *Enter image number* box and press {kbd}`Enter`.
 
 The mask is in the beam now, so the first step is **Confirm acq. boxes**. Pygacq
 traces the acquisition boxes and shows them in a collage, with a green square on
@@ -119,23 +119,22 @@ The same collage, now with a red cross on the star in each box.
 ## 6. Read the offset advice
 
 Pygacq fits the mask to the star positions. The grey text under the offsets
-says why it gives its advice, here *\|P\|+\|R\| = 5% of slit width,
-\|Q\|+\|R\| > 0.2"*. There, \|R\| is the shift that the rotation causes at the
-edge of the field.
+says why it gives its advice, here *\|P\|+\|R\| > 0.2", \|Q\|+\|R\| > 0.2"*.
+There, \|R\| is the shift that the rotation causes at the edge of the field.
 
 Here the stars are still off the box centers, so the advice is to apply the
 offsets and take another acquisition image. To follow it, press {kbd}`Enter`.
 
 :::{figure} images/mos-offsets.png
 :width: 60%
-:alt: The offsets page for N20260309S0097, advising to apply the offsets and take another acquisition image
+:alt: The offsets page for N20250205S0120, advising to apply the offsets and take another acquisition image
 
-The offsets for `N20260309S0097`.
+The offsets for `N20250205S0120`: P = −0.217", Q = 0.267", Rot = 0.015°.
 :::
 
 ## 7. Check the alignment and start science
 
-Load the next mask-in image, `N20260309S0098`, and repeat
+Load the next mask-in image, `N20250205S0121`, and repeat
 [steps 4](#4-confirm-the-acquisition-boxes) to
 [6](#6-read-the-offset-advice).
 

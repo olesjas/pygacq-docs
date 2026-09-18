@@ -29,8 +29,8 @@ directory. Put its associated images there too, e.g. the slit image or the MDF,
 and Pygacq finds them as well.
 
 During the testing period the user data directory is
-`~/Scratch/pygacq_test/user_data`.
-
+`~/Scratch/pygacq_test/user_data`. After that, use the Pygacq cache directory
+instead.
 
 ## Align the acquisition image North up, East left
 
@@ -66,9 +66,21 @@ Use a coordinate file instead of an MDF, e.g. one you created from a mask-in
 image. It is a text file with the box positions, one `x y` pair per line.
 
 Before starting the acquisition, set **MDF** to **User**. Type just the file
-name if the file is in the program folder or in the Pygacq user data directory,
-or the full path if it is somewhere else. You can also click **Browse** to find
-it. Then click **Apply MDF**.
+name if the file is in the program folder or in the Pygacq user data directory
+(the cache directory after the testing period), or the full path if it is
+somewhere else. You can also click **Browse** to find it. Then click **Apply
+MDF**.
+
+## Choose the slit and sky images yourself
+
+Pygacq picks them from the images of the observation. To use different ones, set
+**Slit** or **Sky** to **User**, then either tick the image's **Slit** or **Sky**
+box in the **Acquisitions** list, or type its image number (or click **Browse**)
+and click **Apply slit** or **Apply sky**.
+
+This works during an acquisition too. Pygacq checks the image first, and keeps
+the old one if it isn't suitable. See
+[Choosing the slit and sky images yourself](tutorial/main-window.md#choosing-the-slit-and-sky-images-yourself).
 
 ## Run an acquisition without type auto-detection
 
@@ -83,11 +95,13 @@ The option only applies to the next acquisition you start. See
 
 Pygacq keeps earlier measurements, such as the slit position, in its database
 and reuses them in later acquisitions of the same observation. To measure
-everything from scratch, choose **File → Cleanup → Reset Database** before
-starting the acquisition.
+everything from scratch, tick **Don't reuse previous measurements** in the
+acquisition options, under the three-dots button next to the *Enter image
+number* box, before starting the acquisition.
 
 To remeasure only the slit in the current acquisition, click **Accept target,
-remeasure slit** instead. See
+remeasure slit** instead. For testing, **File → Cleanup → Reset Database**
+clears the measurements of every observation. See
 [Clearing the cache and the database](tutorial/getting-started.md#clearing-the-cache-and-the-database).
 
 ## See an image's header
