@@ -1,7 +1,12 @@
 # MOS acquisition
 
-:::{note}
-This example is still being written.
-:::
+```{toctree}
+:maxdepth: 1
 
-<!-- TODO: walk through one MOS acquisition, step by step, following the same outline as the imaging draft (docs/_drafts/imaging.md). -->
+mos-gmos-n
+```
+
+Coming soon:
+
+- F2 MOS acquisition (with sky subtraction)
+- GMOS-S MOS acquisition using a coordinate file
