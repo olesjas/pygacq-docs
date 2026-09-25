@@ -128,10 +128,11 @@ on-target image. **Copy Offsets** copies the offsets, e.g. for the OT.
 
 Type `S20250115S0281` in the *Enter image number* box and press {kbd}`Enter`.
 
-The slit is in the beam now, so this image is ticked in the **Slit** column of
-the **Acquisitions** list and could be used to measure the slit itself. The GMOS slit position is stable, so Pygacq reuses the measurement from
-the off-target slit image instead and says so on the target-marking page:
-*Reusing previous slit measurement from S20250115S0280*.
+The GMOS slit position is stable, so Pygacq reuses the measurement from the
+off-target slit image and says so on the target-marking page: *Reusing previous
+slit measurement from S20250115S0280*. That image stays ticked in the **Slit**
+column of the **Acquisitions** list, because the measurement on screen is the
+one made on it.
 
 Check that the slit overlay from that measurement still lies along the slit.
 
@@ -173,8 +174,6 @@ width, so the advice is to apply them and take another acquisition image. To
 follow it, press {kbd}`Enter`.
 
 After the offsets were applied, another through-slit on-target image was taken.
-
-<!-- TODO: screenshot of the offsets page for S20250115S0281. -->
 
 ## 9. Check the centering and start science
 

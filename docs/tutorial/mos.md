@@ -4,9 +4,9 @@
 :maxdepth: 1
 
 mos-gmos-n
+mos-f2
 ```
 
 Coming soon:
 
-- F2 MOS acquisition (with sky subtraction)
 - GMOS-S MOS acquisition using a coordinate file
